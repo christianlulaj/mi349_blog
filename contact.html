@@ -1,23 +1,40 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang = "en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Christian Contact Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href= "style.css">
     </head>
     <body>
+        <header> 
+            <h1> Christian Lulaj's Blog </h1>
+            <h2> Contact Page </h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
         <section>
             <form> 
             <label> Name:
-                <input type=”text”>
+                <input type="text" id="name" required placeholder="Enter Name"
+  oninvalid="this.setCustomValidity('Enter User Name Here')"
+  oninput="this.setCustomValidity('')"/>
              </label>
 
             <br><br>
              <label> Email Address:
-                <input type=”text”>
+                <input type="text" id="email" required placeholder="Enter Email Address"
+  oninvalid="this.setCustomValidity('Enter User Name Here')"
+  oninput="this.setCustomValidity('')"/>
              </label>
             
             <br><br>
@@ -32,7 +49,7 @@
             
             <br><br>
 
-            <label for="comment">Comment:</label>
+            <label>Comment:</label>
             <br>
             <textarea id="text-area" name="text-area" rows="3" cols="70"></textarea>
             <br><br>
