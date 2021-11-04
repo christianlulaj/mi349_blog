@@ -1,14 +1,16 @@
 html{
     background: #e3e3e3
+    
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    margin: 20px;
-    padding: 20px;
+    margin: 50px;
+    padding: 50px;
     color: #242424;
     border-top: 10px solid #242424;
     background: #fff;
+    background-color: #f5fcff;
 }
 
 h1{
@@ -36,6 +38,8 @@ table{
     float: right;
     display: inline;
     display: flex;
+    position: sticky;
+    top: 0;
   }
 
   .topnav-right a {
@@ -45,6 +49,7 @@ table{
     padding: 10px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: bolder;
   }
 
   .topnav-right a:hover {
@@ -66,4 +71,68 @@ li{
   list-style: none;
   display: inline;
 }
-  
+
+.form-wrapper{
+  display:flex;
+  height:80vh;
+}
+
+.form{
+  display:flex;
+  padding-top:10px;
+  flex-direction:column;
+}
+
+ .form label{
+  margin-bottom:15px;
+}
+
+.float-left
+{
+  float: left;
+  margin: 0 15px 15px 20px;
+  padding: 15px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+section{
+  padding: 10px;
+  margin: 10px;
+}
+
+
+.flexbox-container {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 20px;
+}
+
+* {
+  box-sizing: border-box;
+
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 10px;
+  width: 50%;
+}
+
+.border-right {
+  border-right: 1px solid black;
+}
