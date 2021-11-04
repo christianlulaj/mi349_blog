@@ -20,45 +20,45 @@
     </div>
         <header> 
             <h1 id = "blog-title"> Christian Lulaj's Blog </h1>
-            
-            <h2> Contact Page </h2>
+            <h2>Contact Page</h2>
         </header>
 
  
+        <div class ="form-wrapper">
+          <section>
+              <h3>Contact me:</h3>
+              <form class= "form"> 
+              <label> Name:
+                  <input type="text" id="name" required placeholder="Enter Name"
+    oninvalid="this.setCustomValidity('Enter User Name Here')"
+    oninput="this.setCustomValidity('')"/>
+              </label>
 
-        <section>
-            <form> 
-            <label> Name:
-                <input type="text" id="name" required placeholder="Enter Name"
-  oninvalid="this.setCustomValidity('Enter User Name Here')"
-  oninput="this.setCustomValidity('')"/>
-             </label>
+              
+              <label> Email Address:
+                  <input type="text" id="email" required placeholder="Enter Email Address"
+    oninvalid="this.setCustomValidity('Enter User Name Here')"
+    oninput="this.setCustomValidity('')"/>
+              </label>
+              
+      
+              <label> Reason for Contact:
+                  <select name="choose-reason" id="choose-reason">
+                  <option value="select-reason">Select Reason</option>
+                  <option value="saying-hi">saying hi</option>
+                  <option value="contractor">looking for a contractor</option>
+                  <option value="interview">interested in an interview</option>
+                  </select>
+              </label>
+              
+          
 
-            
-             <label> Email Address:
-                <input type="text" id="email" required placeholder="Enter Email Address"
-  oninvalid="this.setCustomValidity('Enter User Name Here')"
-  oninput="this.setCustomValidity('')"/>
-             </label>
-            
-     
-             <label> Reason for Contact:
-                <select name="choose-reason" id="choose-reason">
-                <option value="select-reason">Select Reason</option>
-                <option value="saying-hi">saying hi</option>
-                <option value="contractor">looking for a contractor</option>
-                <option value="interview">interested in an interview</option>
-                </select>
-             </label>
-            
-         
-
-            <label>Comment:</label>
-            <br>
-            <textarea id="text-area" name="text-area" rows="3" cols="70"></textarea>
-            <input type="submit" value="Submit">
-            </form>
-        </section>
+              <label>Comment:</label>
+              <textarea id="text-area" name="text-area" rows="3" cols="70"></textarea>
+              <input type="submit" value="Submit">
+              </form>
+          </section>
+        </div>
 
     </body>
 </html>
